@@ -1,0 +1,47 @@
+{
+  "name": "fullstack-tutorial-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src",
+  "scripts": {
+    "build": "babel-node src/index_remote.js",
+    "start": "nodemon src/index.js",
+    "start:ci": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-datasource": "^0.1.3",
+    "apollo-datasource-rest": "^0.1.5",
+    "apollo-server": "2.2.0-alpha.2",
+    "apollo-server-testing": "2.2.0-alpha.2",
+    "casual": "^1.6.0",
+    "graphql": "^14.3.0",
+    "graphql-tools": "^4.0.4",
+    "isemail": "^3.1.3",
+    "merge-graphql-schemas": "^1.5.8",
+    "nodemon": "^1.18.4",
+    "sequelize": "^4.39.0",
+    "sqlite3": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-stage-2": "^7.0.0",
+    "apollo-link": "^1.2.3",
+    "apollo-link-http": "^1.5.5",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^23.6.0",
+    "nock": "^10.0.2",
+    "node-fetch": "^2.2.1"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__utils"
+    ]
+  }
+}
